@@ -5,7 +5,7 @@
         <input type="text" name="cognome" id="Cognome" required>
         <label for="Email">Email:</label>
         <input type="email" style="width: 210px" name="email" id="Email" required>
-        <input type="button" value="insert" onclick="$('#p').load('Aggiungi.php?nome='+$('#name').val()+ '&cognome='+ $('#Cognome').val() + '&email=' +$('#Email').val(), function(){
+        <input type="button" value="insert" onclick="$('#oggetto').load('Aggiungi.php?nome='+$('#name').val()+ '&cognome='+ $('#Cognome').val() + '&email=' +$('#Email').val(), function(){
                 $('#tabella').load('Select.php');});" id="insert">
-        <p id="p"> </p>
+        <p id="oggetto"> </p>
 </div>
