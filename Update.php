@@ -21,5 +21,5 @@ if ($conn->query($sql) === TRUE) {
 } else {
     echo "Error updating record: " . $conn->error;
 }
-
 $conn->close();
+echo "<script> Modifica_Visibile (); </script>";

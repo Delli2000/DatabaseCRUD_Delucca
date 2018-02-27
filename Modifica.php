@@ -5,7 +5,7 @@
     <input type="text"  name="cognome" id="Cognome" value="<?php echo $_GET['cognome'] ?>" required>
     <label for="Email">Email:</label>
     <input type="email"  name="email" id="Email" value="<?php echo $_GET['email'] ?>" required>
-    <input type="button" value="insert" onclick="$('#oggetto').load('Update.php?nome='+$('#name').val()+ '&cognome='+ $('#Cognome').val() + '&email=' +$('#Email').val() + '&id=' + '<?php echo $_GET['id'] ?>', function() {$('#Modifica').hide();}, function(){
+    <input type="button" value="insert" onclick="$('#oggetto1').load('Update.php?nome='+$('#name').val()+ '&cognome='+ $('#Cognome').val() + '&email=' +$('#Email').val() + '&id=' + '<?php echo $_GET['id'] ?>'/*, function() {$('#Modifica').hide();}*/, function(){
             $('#tabella').load('Select.php');});" id="insert">
-    <p id="oggetto"> </p>
+    <p id="oggetto1"> </p>
 </div>

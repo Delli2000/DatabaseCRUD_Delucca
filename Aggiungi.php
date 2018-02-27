@@ -1,13 +1,8 @@
 <?php
-if($_GET['nome']!=null && $_GET['cognome']!=null && $_GET['email']!=null)
+if($_GET['nome']!="" && $_GET['cognome']!="" && $_GET['email']!="")       //controlla che siano stati impostati tutti i parametri
 {
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $dbname = "databaseamatidelucca";
-
+    include "CollegamentoSQL.php";
     $conn = new mysqli($servername, $username, $password, $dbname);
-
     if ($conn->connect_error)
         die("Connection failed: " . $conn->connect_error);
 
@@ -21,4 +16,5 @@ if($_GET['nome']!=null && $_GET['cognome']!=null && $_GET['email']!=null)
         echo "Error: " . $sql . "<br>" . $conn->error;
 
     $conn->close();
+    echo "<script> Aggiunta_Visibile (); </script>";
 }
