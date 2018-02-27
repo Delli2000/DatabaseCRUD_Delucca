@@ -26,7 +26,6 @@
         }
     </style>
     <form id="form"> </form>
-
     <script>
         $(document).ready(function()
         {
@@ -36,18 +35,14 @@
         function Update(id,nome,cognome,email){$("#form").load('Modifica.php?id='+ id +'&nome=' + nome+'&cognome='+ cognome +'&email=' + email);}
     </script>
 </head>
-
 <body onload="$('#tabella').load('Select.php');">
 <div class="container">
     <button class="button" id="Aggiungi" data-toggle="tooltip" data-placement="top" title="Clicca per aggiungere un record"> <span class="glyphicon glyphicon-plus"></span> Aggiungi </button>
     <table class="table table-hover" id="tabella">
 </div>
 <p id="risultato" class="hidden">  </p>
-
     <br>
     <br>
-
 <input type="search" onkeyup="Cerca(document.getElementById('mySearch'),document.getElementsByTagName('td'));" id="mySearch" placeholder="Cerca">
-
 </body>
 </html>

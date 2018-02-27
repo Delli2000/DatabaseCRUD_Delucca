@@ -1,8 +1,8 @@
 function Aggiunta_Visibile()
 {
-    $('#Aggiunta').hide();
+    $('#Aggiunta').hide();      //toglie la visibilità alla barra dei parametri da aggiungere
 }
 function Modifica_Visibile()
 {
-    $('#Modifica').hide();
+    $('#Modifica').hide();      //toglie la visibilità alla barra dei parametri da modificare
 }
