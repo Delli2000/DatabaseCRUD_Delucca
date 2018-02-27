@@ -1,11 +1,12 @@
-<div class="container col-xs-10 col-lg-3">
+<div class="container col-lg-8 col-xs-3" id="Aggiungi">
+        <br>
         <label for="name">Nome:</label>
         <input type="text" name="nome" id="name" required>
         <label for="Cognome">Cognome:</label>
         <input type="text" name="cognome" id="Cognome" required>
         <label for="Email">Email:</label>
         <input type="email" style="width: 210px" name="email" id="Email" required>
-        <input type="button" value="insert" onclick="$('#oggetto').load('Aggiungi.php?nome='+$('#name').val()+ '&cognome='+ $('#Cognome').val() + '&email=' +$('#Email').val(), function(){
+        <input type="button" value="insert"  onclick="$('#oggetto').load('Aggiungi.php?nome='+$('#name').val()+ '&cognome='+ $('#Cognome').val() + '&email=' +$('#Email').val(), function() {$('#Aggiungi').hide();}, function(){
                 $('#tabella').load('Select.php');});" id="insert">
         <p id="oggetto"> </p>
 </div>

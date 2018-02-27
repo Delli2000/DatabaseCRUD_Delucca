@@ -48,6 +48,5 @@
 
 <input type="search" onkeyup="Cerca(document.getElementById('mySearch'),document.getElementsByTagName('td'));" id="mySearch" placeholder="Cerca">
 
-</div>
 </body>
 </html>
